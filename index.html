@@ -294,4 +294,264 @@ footer{
 </footer>
 
 </body>
+</html>.logo img{
+  height:60px;
+  width:auto;
+  display:block;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:45px;
+  font-weight:bold;
+  letter-spacing:1.5px;
+  font-size:15px;
+}
+
+nav a:hover{
+  color:#d90000;
+}
+
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+  url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 30px 40px;
+}
+
+.hero-content{
+  max-width:1100px;
+}
+
+.hero h1{
+  font-size:70px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.hero p{
+  font-size:26px;
+  color:#ddd;
+  margin-bottom:40px;
+  line-height:1.4;
+}
+
+.buttons a{
+  display:inline-block;
+  background:#e00000;
+  color:white;
+  text-decoration:none;
+  padding:18px 42px;
+  margin:10px;
+  font-size:18px;
+  font-weight:bold;
+  border-radius:4px;
+}
+
+.buttons a:hover{
+  background:#b80000;
+}
+
+section{
+  padding:90px 70px;
+}
+
+.section-title{
+  font-size:42px;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.section-subtitle{
+  text-align:center;
+  max-width:850px;
+  margin:0 auto 50px;
+  color:#ccc;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#171717;
+  padding:35px;
+  border:1px solid #2b2b2b;
+  border-radius:8px;
+}
+
+.card h3{
+  color:#fff;
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+.card p{
+  color:#bbb;
+  line-height:1.6;
+}
+
+.consultation{
+  background:#080808;
+  text-align:center;
+}
+
+.price{
+  font-size:44px;
+  color:#e00000;
+  margin:25px 0;
+  font-weight:bold;
+}
+
+.contact{
+  background:#111;
+  text-align:center;
+}
+
+.contact p{
+  color:#ddd;
+  font-size:20px;
+  line-height:1.8;
+}
+
+.whatsapp{
+  position:fixed;
+  right:25px;
+  bottom:25px;
+  background:#25D366;
+  color:white;
+  padding:17px 28px;
+  border-radius:40px;
+  font-weight:bold;
+  text-decoration:none;
+  z-index:1001;
+}
+
+footer{
+  background:#050505;
+  padding:30px;
+  text-align:center;
+  color:#888;
+}
+
+@media(max-width:768px){
+  header{
+    padding:12px 25px;
+  }
+
+  .logo img{
+    height:50px;
+  }
+
+  nav a{
+    margin-left:18px;
+    font-size:12px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:19px;
+  }
+
+  section{
+    padding:70px 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo" alt="Apex Heights Real Estate LLC">
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#consultation">Consultation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Invest. Acquire. Elevate.</h1>
+    <p>Dubai's trusted partner for luxury real estate acquisitions, property sales and investment advisory.</p>
+    <div class="buttons">
+      <a href="#contact">Contact Us</a>
+      <a href="#consultation">Book Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-subtitle">
+    Apex Heights Real Estate LLC provides a refined, professional service for clients buying, selling and investing in Dubai real estate.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Property Buying</h3>
+      <p>Guidance for clients looking to acquire prime residential and investment properties across Dubai.</p>
+    </div>
+
+    <div class="card">
+      <h3>Property Selling</h3>
+      <p>Professional support for owners looking to sell their property with strong positioning and market insight.</p>
+    </div>
+
+    <div class="card">
+      <h3>Investment Advisory</h3>
+      <p>Strategic advice for investors seeking high-potential opportunities in Dubai’s property market.</p>
+    </div>
+  </div>
+</section>
+
+<section id="consultation" class="consultation">
+  <h2 class="section-title">Private Real Estate Consultation</h2>
+  <p class="section-subtitle">
+    A focused consultation designed for serious buyers, sellers and investors who want expert guidance before making their next move.
+  </p>
+  <div class="price">AED 5,000</div>
+  <div class="buttons">
+    <a href="#contact">Book Consultation</a>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Apex Heights</h2>
+  <p>
+    Luke Jones<br>
+    Email: Luke.jones@apexheights.ae<br>
+    Phone: +971 58 523 2088<br>
+    WhatsApp: +971 58 523 2088<br><br>
+    Empire Heights A – 16F<br>
+    Business Bay, Dubai, UAE
+  </p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/971585232088" target="_blank">WhatsApp</a>
+
+<footer>
+  © 2026 Apex Heights Real Estate LLC. All rights reserved.
+</footer>
+
+</body>
 </html>
