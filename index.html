@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apex Heights Real Estate LLC</title>
+
+<title>Apex Heights Real Estate LLC | Dubai Luxury Real Estate</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -19,82 +24,118 @@ color:white;
 }
 
 header{
-background:black;
-padding:20px 50px;
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.95);
+padding:15px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+z-index:1000;
 }
 
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#d4af37;
+.logo img{
+height:60px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:30px;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
 .hero{
-height:90vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80');
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=80');
 background-size:cover;
 background-position:center;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
 padding:20px;
 }
 
+.hero-content{
+max-width:900px;
+}
+
 .hero-content h1{
-font-size:60px;
+font-size:70px;
 margin-bottom:20px;
+font-weight:700;
 }
 
 .hero-content p{
-font-size:22px;
-margin-bottom:30px;
+font-size:24px;
+margin-bottom:40px;
+color:#d5d5d5;
 }
 
 .btn{
-background:#c00000;
+display:inline-block;
+padding:16px 35px;
+background:#d60000;
 color:white;
-padding:15px 30px;
 text-decoration:none;
-border-radius:5px;
+border-radius:4px;
+margin:10px;
+font-weight:bold;
 }
 
 section{
-padding:80px 50px;
+padding:100px 10%;
 }
 
-.services{
+.section-title{
+font-size:42px;
+margin-bottom:50px;
+text-align:center;
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
-margin-top:40px;
 }
 
 .card{
-background:#1a1a1a;
-padding:30px;
+background:#171717;
+padding:35px;
 border-radius:10px;
 }
 
-.consultation{
+.card h3{
+margin-bottom:15px;
+color:#d60000;
+}
+
+.contact{
 text-align:center;
-background:#111;
 }
 
 footer{
 background:black;
-padding:30px;
+padding:40px;
 text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
 </head>
@@ -102,64 +143,93 @@ text-align:center;
 <body>
 
 <header>
-<div class="logo">Apex Heights</div>
+<div class="logo">
+<img src="PHOTO-2026-06-04-18-51-32.jpg" alt="Apex Heights">
+</div>
+
 <nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Consultation</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#consultation">Consultation</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
-<h1>Dubai Real Estate Experts</h1>
-<p>Luxury Property Sales, Acquisitions & Investment Advisory</p>
-<a href="#" class="btn">Book Consultation</a>
+<h1>Invest. Acquire. Elevate.</h1>
+
+<p>
+Dubai's trusted partner for luxury real estate acquisitions,
+property sales and investment advisory.
+</p>
+
+<a href="#contact" class="btn">Contact Us</a>
+<a href="#consultation" class="btn">Book Consultation</a>
 </div>
 </section>
 
-<section>
-<h2>Our Services</h2>
+<section id="services">
+<h2 class="section-title">Our Services</h2>
 
-<div class="services">
+<div class="grid">
 
 <div class="card">
 <h3>Property Buying</h3>
-<p>Find your ideal residential or investment property in Dubai.</p>
+<p>Exclusive apartments, villas, penthouses and off-plan opportunities across Dubai.</p>
 </div>
 
 <div class="card">
 <h3>Property Selling</h3>
-<p>Professional marketing and sales support for property owners.</p>
+<p>Strategic marketing, valuation guidance and buyer sourcing for premium assets.</p>
 </div>
 
 <div class="card">
 <h3>Investment Advisory</h3>
-<p>Expert guidance on high-return opportunities in Dubai real estate.</p>
+<p>Tailored investment strategies focused on capital appreciation and long-term growth.</p>
 </div>
 
 </div>
 </section>
 
-<section class="consultation">
-<h2>AED 5,000 Consultation Service</h2>
-<br>
-<p>Personalised real estate strategy session tailored to your goals.</p>
-<br>
-<a href="#" class="btn">Book Now</a>
+<section id="consultation">
+<h2 class="section-title">AED 5,000 Consultation</h2>
+
+<div class="card">
+<p>
+A private strategy session designed for investors, homeowners and international buyers seeking expert guidance in Dubai's real estate market.
+</p>
+</div>
 </section>
 
-<section>
-<h2>Contact Us</h2>
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Apex Heights</h2>
+
+<p>Phone: 0585232088</p>
 <br>
-<p>Email: info@apexheights.ae</p>
-<p>Dubai, United Arab Emirates</p>
+
+<p>Email: Luke.jones@apexheights.ae</p>
+<br>
+
+<p>WhatsApp: +971585232088</p>
+<br>
+
+<p>
+Empire Heights A – 16F<br>
+Business Bay<br>
+Dubai
+</p>
 </section>
 
 <footer>
-<p>© 2026 Apex Heights Real Estate LLC. All Rights Reserved.</p>
+© 2026 Apex Heights Real Estate LLC
 </footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/971585232088"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
